@@ -28,10 +28,31 @@
             object-fit: cover;
             transform: translate(-15px, -15px);
         }
+        &:focus{
+            box-shadow: 0 5px 20px $main-color;
+        }
         &_selected {
             box-shadow: 0 5px 20px $main-color;
             transform: translateY(-8px);
         }
+        
+        &-enter {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        &-exit {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        &-exit-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+          
     }
     &__name {
         font-weight: bold;

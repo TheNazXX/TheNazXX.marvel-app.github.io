@@ -32,5 +32,21 @@
         &:hover {
             transform: translateY(-5px);
         }
+        &-enter {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        &-exit {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+        &-exit-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
     }
 }

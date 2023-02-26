@@ -1,24 +1,28 @@
-import AppHeader from "../appHeader/AppHeader";
-import RandomChar from "../randomChar/RandomChar";
-import CharList from "../charList/CharList";
-import CharInfo from "../charInfo/CharInfo";
+import AppHeader from '../appHeader/AppHeader.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {MainPage, ComicsPage, Page404, SingleComicLayout, SingleCharLayout, SinglePage} from './pages/index.js';
 
-import decoration from '../../resources/img/vision.png';
+import './App.scss';
+
 
 const App = () => {
-    return (
-        <div className="app">
+    return (   
+       <Router>
+         <div className="app">
             <AppHeader/>
             <main>
-                <RandomChar/>
-                <div className="char__content">
-                    <CharList/>
-                    <CharInfo/>
-                </div>
-                <img className="bg-decoration" src={decoration} alt="vision"/>
+                <Routes>
+                    <Route path='/' element={<MainPage />}/>
+                    <Route path='/comics' element={<ComicsPage />}/>
+                    <Route path='/comics/:itemId' element={<SinglePage Component={SingleComicLayout} dataType='comic'/>}/>
+                    <Route path='/characters/:itemId' element={<SinglePage Component={SingleCharLayout} dataType='char'/>}/>
+                    <Route path='*' element={<Page404/>}/>
+                </Routes>
             </main>
         </div>
+       </Router>     
     )
 }
+
 
 export default App;

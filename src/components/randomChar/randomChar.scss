@@ -28,7 +28,8 @@
         text-transform: uppercase;
     }
     &__descr {
-        font-size: 14px;
+        overflow: hidden;
+        font-size: 18px;
         line-height: 18px;
     }
     &__btns {
