@@ -38,7 +38,7 @@ const View = ({ id, name, img, description, wiki, comics}) => {
             <div>
             <div className="char__info-name">{name}</div>
             <div className="char__btns">
-                <Link  to={`/characters/${id}`} className="button button__main">
+                <Link  to={`/marvel-app/${id}`} className="button button__main">
                   <div className="inner">homePage</div>
                 </Link>
                 <a href={wiki} className="button button__secondary">

@@ -68,7 +68,7 @@ const View = ({name, id}) => {
   return (
     <div className="search-form__inner">
       <div className="search-form__title search-form__title--green">There is! Visit {name} page?</div>
-      <Link to={`/characters/${id}`} className="search-form__button button button__secondary">
+      <Link to={`/marvel-app/${id}`} className="search-form__button button button__secondary">
         <div className="inner">To Page</div>
       </Link>
     </div>

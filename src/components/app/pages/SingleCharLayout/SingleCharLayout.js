@@ -9,7 +9,7 @@ const SingleCharLayout = ({ name, description, img }) => {
         <h2 className="single-comic__name">{name}</h2>
         <p className="single-comic__descr">{description}</p>
       </div>
-      <Link to="/" className="single-comic__back">
+      <Link to="/marvel-app" className="single-comic__back">
         Back to all
       </Link>
     </div>

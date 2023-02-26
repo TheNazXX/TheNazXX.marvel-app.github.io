@@ -63,7 +63,7 @@ const View = ({ id, name, description, img, homePage, wiki }) => {
         <p className="randomchar__name">{name}</p>
         <div className="randomchar__descr">{description ? description : 'Описания нету :('}</div>
         <div className="randomchar__btns">
-          <Link to={`/characters/${id}`} className="button button__main">
+          <Link to={`/marvel-app/${id}`} className="button button__main">
             <div className="inner">home-page</div>
           </Link>
           <a href={wiki} className="button button__secondary">

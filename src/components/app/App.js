@@ -12,10 +12,10 @@ const App = () => {
             <AppHeader/>
             <main>
                 <Routes>
-                    <Route path='/' element={<MainPage />}/>
+                    <Route path='/marvel-app' element={<MainPage />}/>
                     <Route path='/comics' element={<ComicsPage />}/>
                     <Route path='/comics/:itemId' element={<SinglePage Component={SingleComicLayout} dataType='comic'/>}/>
-                    <Route path='/characters/:itemId' element={<SinglePage Component={SingleCharLayout} dataType='char'/>}/>
+                    <Route path='/marvel-app/:itemId' element={<SinglePage Component={SingleCharLayout} dataType='char'/>}/>
                     <Route path='*' element={<Page404/>}/>
                 </Routes>
             </main>
