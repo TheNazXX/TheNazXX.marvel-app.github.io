@@ -1,6 +1,6 @@
 import './spinner.scss'
 
-const SponnerDots = () => {
+const SpinnerDots = () => {
   return (
     <svg className="spinner-dots" width="60" height="30">
       <circle cx="15" cy="15" r="6">
@@ -16,4 +16,4 @@ const SponnerDots = () => {
   );
 };
 
-export default SponnerDots;
+export default SpinnerDots;
